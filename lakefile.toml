@@ -1,5 +1,8 @@
 name = "MLList"
 defaultTargets = ["MLList"]
+testDriver = "MLListTest"
+lintDriver = "batteries/runLinter"
+lintDriverArgs = ["MLList"]
 
 [[require]]
 name = "batteries"
@@ -11,8 +14,4 @@ name = "MLList"
 
 [[lean_lib]]
 name = "MLListTest"
-
-testDriver = "MLListTest"
-lintDriver = "batteries/runLinter"
-lintDriverArgs = ["MLList"]
 
