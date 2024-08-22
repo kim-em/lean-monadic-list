@@ -1,0 +1,18 @@
+name = "MLList"
+defaultTargets = ["MLList"]
+
+[[require]]
+name = "batteries"
+scope = "leanprover-community"
+version = "git#main"
+
+[[lean_lib]]
+name = "MLList"
+
+[[lean_lib]]
+name = "MLListTest"
+
+testDriver = "MLListTest"
+lintDriver = "batteries/runLinter"
+lintDriverArgs = ["MLList"]
+
